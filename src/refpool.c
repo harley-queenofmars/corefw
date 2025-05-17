@@ -55,7 +55,7 @@ CFClassRef CFRefPool = &class;
 
 static CFRefPoolRef top;
 
-CFRefPoolRef method Ctor(CFRefPoolRef this)
+CFRefPoolRef proc Ctor(CFRefPoolRef this)
 {	
 	// (CFRefPoolRef)this;
 	return this;

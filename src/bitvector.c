@@ -94,7 +94,7 @@ unsigned int numberOfTrailingZeros(unsigned int i)
  * @param value of bool
  * 
  */
-method void* New(CFBitVectorRef this, int nbits)
+proc void* New(CFBitVectorRef this, int nbits)
 {
         this->length = 0;
         if (nbits > 0) {
@@ -107,12 +107,12 @@ method void* New(CFBitVectorRef this, int nbits)
         return this;
 }
 
-method void* New(CFBitVectorRef this)
+proc void* New(CFBitVectorRef this)
 {
         return New(this, 16);
 }
 
-method int NextSetBit(CFBitVectorRef this, int fromIndex)
+proc int NextSetBit(CFBitVectorRef this, int fromIndex)
 {
         int u = fromIndex >> ADDRESS_BITS_PER_WORD;
         int wordsInUse = this->length;
@@ -127,7 +127,7 @@ method int NextSetBit(CFBitVectorRef this, int fromIndex)
         }
 }
 
-method bool Intersects(CFBitVectorRef this, CFBitVectorRef set)
+proc bool Intersects(CFBitVectorRef this, CFBitVectorRef set)
 {
         int wordsInUse = this->length;
 
@@ -137,17 +137,17 @@ method bool Intersects(CFBitVectorRef this, CFBitVectorRef set)
         return false;
 }
 
-method bool IsEmpty(CFBitVectorRef this)
+proc bool IsEmpty(CFBitVectorRef this)
 {
         return this->length == 0;
 }
 
-method int Size(CFBitVectorRef this)
+proc int Size(CFBitVectorRef this)
 {
         return (this->length << ADDRESS_BITS_PER_WORD);
 }
 
-method void Set(CFBitVectorRef this, int bitIndex, bool value)
+proc void Set(CFBitVectorRef this, int bitIndex, bool value)
 {
         int wordIndex = bitIndex >> ADDRESS_BITS_PER_WORD;
         int wordsInUse = this->length;
@@ -175,7 +175,7 @@ method void Set(CFBitVectorRef this, int bitIndex, bool value)
         }
 }
 
-method bool Get(CFBitVectorRef this, int bitIndex)
+proc bool Get(CFBitVectorRef this, int bitIndex)
 {
         int wordIndex = bitIndex >> ADDRESS_BITS_PER_WORD;
         int wordsInUse = this->length;
@@ -183,7 +183,7 @@ method bool Get(CFBitVectorRef this, int bitIndex)
         return (wordIndex < wordsInUse) && ((this->words[wordIndex] & (1 << bitIndex)) != 0);
 }
 
-method void method Clear(CFBitVectorRef this, int bitIndex)
+proc void proc Clear(CFBitVectorRef this, int bitIndex)
 {
         if (bitIndex == -1) {
                 int wordsInUse = this->length;
@@ -201,7 +201,7 @@ method void method Clear(CFBitVectorRef this, int bitIndex)
         this->words[wordIndex] &= ~(1 << bitIndex);
 }
 
-method void method Clear(CFBitVectorRef this)
+proc void proc Clear(CFBitVectorRef this)
 {
         Clear(this, -1);
 }
@@ -209,7 +209,7 @@ method void method Clear(CFBitVectorRef this)
 /**
  * Returns the string value of this CFBitVector
  */
-// method char* ToString(CFBitVectorRef this)
+// proc char* ToString(CFBitVectorRef this)
 // {
 //         (CFBitVectorRef)this;
         

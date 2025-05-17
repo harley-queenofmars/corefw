@@ -41,9 +41,9 @@ extern bool CFArrayContainsPtr(CFArrayRef, void*);
 extern size_t CFArrayFind(CFArrayRef, void*);
 extern size_t CFArrayFindPtr(CFArrayRef, void*);
 
-extern method void Clear(CFArrayRef);
-extern method void* Get(CFArrayRef, int);
-extern method void Add(CFArrayRef, void*);
-extern method void Put(CFArrayRef, int, void*);
-extern method size_t Length(CFArrayRef);
+extern proc void Clear(CFArrayRef);
+extern proc void* Get(CFArrayRef, int);
+extern proc void Add(CFArrayRef, void*);
+extern proc void Put(CFArrayRef, int, void*);
+extern proc size_t Length(CFArrayRef);
 

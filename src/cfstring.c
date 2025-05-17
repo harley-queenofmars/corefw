@@ -56,23 +56,23 @@ typedef struct __CFString
 CFClassRef CFString = &class;
 
 
-method CFStringRef NewString(char* value)
+proc CFStringRef NewString(char* value)
 {
         return CFNew(CFString, value);        
 }
 
-method char* cstr(CFStringRef this)
+proc char* cstr(CFStringRef this)
 {
         return CFStringC(this);
 }
 
-method char* ToString(CFStringRef this)
+proc char* ToString(CFStringRef this)
 {
         return CFStringC(this);
 }
 
 
-method int Length(CFStringRef this)
+proc int Length(CFStringRef this)
 {
         return (int)CFStringLength(this);
 }

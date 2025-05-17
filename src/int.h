@@ -30,6 +30,6 @@
 extern CFClassRef CFInt;
 typedef struct __CFInt* CFIntRef;
 
-extern method CFIntRef NewInt(intmax_t);
+extern proc CFIntRef NewInt(intmax_t);
 extern intmax_t CFIntValue(CFIntRef);
 

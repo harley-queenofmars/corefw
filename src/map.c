@@ -62,23 +62,23 @@ static __CFClass class = {
 };
 CFClassRef CFMap = &class;
 
-method void* Get(CFMapRef this, char* key)
+proc void* Get(CFMapRef this, char* key)
 {
         return CFMapGet(this, key);
 }
 
-method bool Remove(CFMapRef this, char* key)
+proc bool Remove(CFMapRef this, char* key)
 {
         return CFMapSet(this, key, nullptr);
 }
 
-method void Put(CFMapRef this, char* key, void* object)
+proc void Put(CFMapRef this, char* key, void* object)
 {
         CFMapSet(this, key, object);
 }
 
 
-method void ForEach(CFMapRef this, void(*func)(void* key, void* item))
+proc void ForEach(CFMapRef this, void(*func)(void* key, void* item))
 {
      CFMapIter_t iter;
 

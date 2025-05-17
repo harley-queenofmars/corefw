@@ -247,7 +247,7 @@ void* CFBagGet(CFBagRef this, size_t index)
 }
 
 /**
- * Returns the element at the specified position in Bag. This method
+ * Returns the element at the specified position in Bag. This proc
  * ensures that the bag grows if the requested index is outside the bounds
  * of the current backing array.
  *

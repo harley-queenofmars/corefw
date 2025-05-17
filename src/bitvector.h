@@ -31,17 +31,17 @@ extern const CFClassRef CFBitVector;
 
 typedef struct __CFBitVector* CFBitVectorRef;
 
-extern method void* New(CFBitVectorRef);
-extern method void* New(CFBitVectorRef, int);
-extern method int NextSetBit(CFBitVectorRef, int); 
-extern method bool Intersects(CFBitVectorRef, CFBitVectorRef); 
-extern method bool IsEmpty(CFBitVectorRef); 
-extern method void Set(CFBitVectorRef, int, bool); 
-extern method bool Get(CFBitVectorRef, int); 
-extern method void Clear(CFBitVectorRef);
-extern method void Clear(CFBitVectorRef, int);    
-extern method int Size(CFBitVectorRef);
-// extern method char* ToString(CFBitVectorRef);
+extern proc void* New(CFBitVectorRef);
+extern proc void* New(CFBitVectorRef, int);
+extern proc int NextSetBit(CFBitVectorRef, int); 
+extern proc bool Intersects(CFBitVectorRef, CFBitVectorRef); 
+extern proc bool IsEmpty(CFBitVectorRef); 
+extern proc void Set(CFBitVectorRef, int, bool); 
+extern proc bool Get(CFBitVectorRef, int); 
+extern proc void Clear(CFBitVectorRef);
+extern proc void Clear(CFBitVectorRef, int);    
+extern proc int Size(CFBitVectorRef);
+// extern proc char* ToString(CFBitVectorRef);
 
 
 

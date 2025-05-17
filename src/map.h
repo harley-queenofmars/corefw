@@ -47,8 +47,8 @@ extern bool CFMapSetC(CFMapRef, const char*, void*);
 extern void CFMapIter(CFMapRef, CFMapIter_t*);
 extern void CFMapIterNext(CFMapIter_t*);
 
-extern method void* Get(CFMapRef, char*);
-extern method bool Remove(CFMapRef, char*);
-extern method void Put(CFMapRef, char*, void*);
-extern method void ForEach(CFMapRef, void(*func)(void*, void*));
+extern proc void* Get(CFMapRef, char*);
+extern proc bool Remove(CFMapRef, char*);
+extern proc void Put(CFMapRef, char*, void*);
+extern proc void ForEach(CFMapRef, void(*func)(void*, void*));
 

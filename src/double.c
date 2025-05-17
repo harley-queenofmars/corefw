@@ -85,7 +85,7 @@ static void* copy(void *ptr)
 	return CFRef(ptr);
 }
 
-extern method CFDoubleRef NewDouble(double value)
+extern proc CFDoubleRef NewDouble(double value)
 {
 	return CFNew(CFDouble, value);        
 }

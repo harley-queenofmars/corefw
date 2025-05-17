@@ -37,7 +37,7 @@ static __CFClass class = {
 };
 const CFClassRef CFUuid = &class;
 
-method void* New(CFUuidRef this)
+proc void* New(CFUuidRef this)
 {
     unsigned long d0 = NextLong();
     unsigned long d1 = NextLong();
@@ -61,7 +61,7 @@ method void* New(CFUuidRef this)
     return this;
 }
 
-method char* GetToStringFormat(char format)
+proc char* GetToStringFormat(char format)
 {
     switch (format) {
     case 'N':
@@ -78,7 +78,7 @@ method char* GetToStringFormat(char format)
     return "%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x";
 }
 
-method char* ToString(CFUuidRef this, char format)
+proc char* ToString(CFUuidRef this, char format)
 {
     (void)format;
     static char hex[256][3] = { // hex identity values 0-255
@@ -127,7 +127,7 @@ method char* ToString(CFUuidRef this, char format)
     return CFCreate(CFString, r);
 }
 
-method char* ToString(CFUuidRef this)
+proc char* ToString(CFUuidRef this)
 {
     return ToString(this, 'D');
 }

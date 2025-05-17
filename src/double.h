@@ -30,6 +30,6 @@
 extern CFClassRef CFDouble;
 typedef struct __CFDouble* CFDoubleRef;
 
-extern method CFDoubleRef NewDouble(double);
+extern proc CFDoubleRef NewDouble(double);
 extern double CFDoubleValue(CFDoubleRef);
 

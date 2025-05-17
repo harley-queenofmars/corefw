@@ -65,12 +65,12 @@ typedef struct __CFRandom
      unsigned long   seed;
 } __CFRandom;
 
-extern method void* Ctor(CFRandomRef);
-extern method void* Ctor(CFRandomRef, unsigned long);
-extern method void* Ctor(CFRandomRef, unsigned long [], int );
+extern proc void* Ctor(CFRandomRef);
+extern proc void* Ctor(CFRandomRef, unsigned long);
+extern proc void* Ctor(CFRandomRef, unsigned long [], int );
 
-extern method unsigned long NextLong(void);
-extern method double NextDouble(void);
+extern proc unsigned long NextLong(void);
+extern proc double NextDouble(void);
 
 static inline CFRandomRef NewRandom(unsigned long seed)
 {

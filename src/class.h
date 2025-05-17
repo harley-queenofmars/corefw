@@ -31,7 +31,7 @@
 
 #define class(x) static __CFClass class = {.name = #x,.size = sizeof(__##x)};CFClassRef x = &class;
 #define class2(x, d) static __CFClass class = {.name = #x,.size = sizeof(__##x),.dtor=&d};CFClassRef x = &class;
-#define method __attribute__((overloadable))
+#define proc __attribute__((overloadable))
 
 typedef struct __CFClass* CFClassRef;
 

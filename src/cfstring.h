@@ -49,8 +49,8 @@ extern size_t CFStringFind(CFStringRef, CFStringRef, CFRange_t);
 extern size_t CFStringFindC(CFStringRef, const char *, CFRange_t);
 extern char *CFStringJoin(int count, ...);
 
-// extern method CFStringRef NewString();
-extern method CFStringRef NewString(char *);
-extern method char *cstr(CFStringRef);
-extern method char *ToString(CFStringRef);
-extern method int Length(CFStringRef);
+// extern proc CFStringRef NewString();
+extern proc CFStringRef NewString(char *);
+extern proc char *cstr(CFStringRef);
+extern proc char *ToString(CFStringRef);
+extern proc int Length(CFStringRef);

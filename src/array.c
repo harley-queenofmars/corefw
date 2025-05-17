@@ -56,7 +56,7 @@ static __CFClass class = {
 };
 CFClassRef CFArray = &class;
 
-method void Clear(CFArrayRef this)
+proc void Clear(CFArrayRef this)
 {
 
 	for (size_t i = 0; i < this->size; i++)
@@ -67,22 +67,22 @@ method void Clear(CFArrayRef this)
         this->size = 0;
 }
 
-method void* Get(CFArrayRef this, int i)
+proc void* Get(CFArrayRef this, int i)
 {
         return CFArrayGet(this, i);
 }
 
-method void Add(CFArrayRef this, void* item)
+proc void Add(CFArrayRef this, void* item)
 {
         CFArrayPush(this, item);
 }
 
-method void Put(CFArrayRef this, int index, void* object)
+proc void Put(CFArrayRef this, int index, void* object)
 {
         CFArraySet(this, index, object);
 }
 
-method size_t Length(CFArrayRef this)
+proc size_t Length(CFArrayRef this)
 {
         return CFArraySize(this);
 }

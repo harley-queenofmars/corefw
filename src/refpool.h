@@ -32,7 +32,7 @@ extern CFClassRef CFRefPool;
 typedef struct __CFRefPool* CFRefPoolRef;
 
 extern bool CFRefPoolAdd(void*);
-CFRefPoolRef method Ctor(CFRefPoolRef);
+CFRefPoolRef proc Ctor(CFRefPoolRef);
 
 static inline CFRefPoolRef NewCFRefPool()
 {

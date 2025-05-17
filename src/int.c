@@ -88,7 +88,7 @@ intmax_t CFIntValue(CFIntRef integer)
 	return integer->value;
 }
 
-method CFIntRef NewInt(intmax_t value)
+proc CFIntRef NewInt(intmax_t value)
 {
         return CFNew(CFInt, value);        
 }

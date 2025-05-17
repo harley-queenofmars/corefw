@@ -73,7 +73,7 @@ const CFClassRef CFRandom = &class;
 
 unsigned long frameCounter = 999;
 
-method unsigned long NextLong(void)
+proc unsigned long NextLong(void)
 {
         if (CFRandomInstance == nullptr) {
                 // unsigned long seed = (unsigned long)time(nullptr);
@@ -84,7 +84,7 @@ method unsigned long NextLong(void)
         return genrand_int32(CFRandomInstance);
 }
 
-method double NextDouble(void)
+proc double NextDouble(void)
 {
         if (CFRandomInstance == nullptr) {
                 // unsigned long seed = (unsigned long)time(nullptr);
@@ -94,14 +94,14 @@ method double NextDouble(void)
         return genrand_real1(CFRandomInstance);
 }
 
-method void* Ctor(CFRandomRef this)
+proc void* Ctor(CFRandomRef this)
 {
         // (CFRandomRef)this;
         // return New(this, (unsigned long)time(nullptr));
         return NewRandom(frameCounter);
 }
 
-method void* Ctor(CFRandomRef this, unsigned long seed)
+proc void* Ctor(CFRandomRef this, unsigned long seed)
 {
         memset(this->mt, 0, (MT19937_N * sizeof(unsigned long)));
         this->mti = MT19937_N + 1;
@@ -109,7 +109,7 @@ method void* Ctor(CFRandomRef this, unsigned long seed)
         return this;
 }
 
-method void* Ctor(CFRandomRef this, unsigned long seed[], int length)
+proc void* Ctor(CFRandomRef this, unsigned long seed[], int length)
 {
         memset(this->mt, 0, (MT19937_N * sizeof(unsigned long)));
         this->mti = MT19937_N + 1;

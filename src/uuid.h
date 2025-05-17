@@ -66,7 +66,7 @@ typedef struct __CFUuid
 } __CFUuid;
  
  
-extern method void* New(CFUuidRef this);
-extern method char* GetToStringFormat(char format);
-extern method char* ToString(CFUuidRef self, char format);
-extern method char* ToString(CFUuidRef self);
+extern proc void* New(CFUuidRef this);
+extern proc char* GetToStringFormat(char format);
+extern proc char* ToString(CFUuidRef self, char format);
+extern proc char* ToString(CFUuidRef self);
