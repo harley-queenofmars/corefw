@@ -1,0 +1,23 @@
+set(SOURCE
+   ${SOURCE}
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/array.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/bag.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/bitvector.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/bool.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/box.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/cfstring.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/class.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/double.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/int.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/map.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/object.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/printf.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/random.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/range.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/refpool.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/uuid.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/stream.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/file.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/cfwfs.c
+   PARENT_SCOPE
+)
