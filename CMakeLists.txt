@@ -1,23 +1,23 @@
 set(SOURCE
    ${SOURCE}
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/array.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/bag.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/bitvector.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/bool.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/box.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/cfstring.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/class.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/double.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/int.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/map.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/object.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFArray.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFBag.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFBitVector.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFBool.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFBox.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFString.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFClass.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFDouble.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFInt.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFMap.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFObject.c
    ${CMAKE_CURRENT_SOURCE_DIR}/src/printf.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/random.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/range.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/refpool.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/uuid.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/stream.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/file.c
-   ${CMAKE_CURRENT_SOURCE_DIR}/src/cfwfs.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFRandom.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFRange.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFRefPool.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFUuid.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFStream.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFFile.c
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/CFFS.c
    PARENT_SCOPE
 )
