@@ -117,7 +117,7 @@ proc void Clear(CFArrayRef this)
  */
 proc void* Get(CFArrayRef this, int i)
 {
-        return CFArrayGet(this, i);
+    return CFArrayGet(this, i);
 }
 
 /**
@@ -128,7 +128,7 @@ proc void* Get(CFArrayRef this, int i)
  */
 proc void Add(CFArrayRef this, void* item)
 {
-        CFArrayPush(this, item);
+    CFArrayPush(this, item);
 }
 
 /**
@@ -142,7 +142,7 @@ proc void Add(CFArrayRef this, void* item)
  */
 proc void Put(CFArrayRef this, int index, void* object)
 {
-        CFArraySet(this, index, object);
+    CFArraySet(this, index, object);
 }
 
 /**
@@ -155,7 +155,7 @@ proc void Put(CFArrayRef this, int index, void* object)
  */
 proc size_t Length(CFArrayRef this)
 {
-        return CFArraySize(this);
+    return CFArraySize(this);
 }
 
 /**
